@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Lead Intake Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <form class="card">
+
+            <h1>Lead Management System</h1>
+
+            <p class="subtitle">
+                Enter lead information below.
+            </p>
+
+            <!-- Personal Information -->
+
+            <fieldset>
+
+                <legend>Personal Information</legend>
+
+                <div class="grid">
+
+                    <div class="input-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            id="name"
+                            type="text"
+                            placeholder="John Doe"
+                            required
+                            minlength="3"
+                            aria-required="true">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            id="email"
+                            type="email"
+                            placeholder="john@email.com"
+                            required
+                            aria-required="true">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            id="phone"
+                            type="tel"
+                            pattern="[0-9]{11}"
+                            placeholder="03123456789"
+                            required
+                            aria-describedby="phone-help">
+
+                        <small id="phone-help">
+                            Enter an 11-digit phone number.
+                        </small>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="company">
+                            Company
+                        </label>
+
+                        <input
+                            id="company"
+                            type="text"
+                            placeholder="ABC Solutions">
+
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+            <!-- Lead Details -->
+
+            <fieldset>
+
+                <legend>Lead Details</legend>
+
+                <div class="grid">
+
+                    <div class="input-group">
+
+                        <label for="source">
+                            Lead Source
+                        </label>
+
+                        <select id="source" required>
+
+                            <option value="">
+                                Select Source
+                            </option>
+
+                            <option>Facebook</option>
+                            <option>Instagram</option>
+                            <option>Website</option>
+                            <option>Referral</option>
+                            <option>LinkedIn</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="priority">
+                            Priority
+                        </label>
+
+                        <select id="priority">
+
+                            <option>Low</option>
+                            <option>Medium</option>
+                            <option>High</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="budget">
+                            Estimated Budget
+                        </label>
+
+                        <input
+                            id="budget"
+                            type="number"
+                            min="1000"
+                            max="1000000"
+                            placeholder="50000">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="date">
+                            Expected Closing Date
+                        </label>
+
+                        <input
+                            id="date"
+                            type="date">
+
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+            <!-- Preferences -->
+
+            <fieldset>
+
+                <legend>Preferred Contact</legend>
+
+                <div class="radio-group">
+
+                    <label>
+                        <input type="radio"
+                               name="contact"
+                               checked>
+
+                        Email
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="contact">
+
+                        Phone
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="contact">
+
+                        WhatsApp
+                    </label>
+
+                </div>
+
+            </fieldset>
+
+            <!-- Services -->
+
+            <fieldset>
+
+                <legend>Interested Services</legend>
+
+                <div class="checkbox-group">
+
+                    <label>
+                        <input type="checkbox">
+                        Website
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Mobile App
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        UI/UX Design
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        SEO
+                    </label>
+
+                </div>
+
+            </fieldset>
+
+            <!-- Notes -->
+
+            <div class="input-group">
+
+                <label for="notes">
+                    Additional Notes
+                </label>
+
+                <textarea
+                    id="notes"
+                    rows="6"
+                    placeholder="Write additional information..."></textarea>
+
+            </div>
+
+            <button type="submit">
+                Submit Lead
+            </button>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>
