@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>SalesFlow</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active">
+                        <i class="fa-solid fa-house"></i>
+                        Dashboard
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-users"></i>
+                        Customers
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-file-lines"></i>
+                        Reports
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Orders
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-chart-column"></i>
+                        Analytics
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-gear"></i>
+                        Settings
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+
+            <header class="topbar">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search customers, reports...">
+                </div>
+                <div class="profile-section">
+                    <i class="fa-regular fa-bell"></i>
+                    <i class="fa-regular fa-envelope"></i>
+                    <div class="profile">
+                        <img src="mine.jpeg" alt="profile">
+                        <div>
+                            <h4>Mohsin Ali</h4>
+                            <small>CRM Manager</small>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="heading">
+                <div>
+                    <h1>Dashboard Overview</h1>
+                    <p>Welcome back! Here's what's happening today.</p>
+                </div>
+                <button>
+                    <i class="fa-solid fa-plus"></i>
+                    Add Customer
+                </button>
+            </section>
+
+            <section class="cards">
+                <div class="card">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <h3>$148,500</h3>
+                    <p>Total Revenue</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-users"></i>
+                    <h3>3,281</h3>
+                    <p>Customers</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h3>812</h3>
+                    <p>Orders</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>92%</h3>
+                    <p>Performance</p>
+                </div>
+            </section>
+
+            <section class="content">
+                <div class="table-card">
+                    <div class="card-header">
+                        <h2>Recent Activities</h2>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Customer</th>
+                                <th>Activity</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Rayyan Ahmer</td>
+                                <td>Purchased CRM Pro</td>
+                                <td class="success">Completed</td>
+                                <td>Today</td>
+                            </tr>
+                            <tr>
+                                <td>Hamza Tariq</td>
+                                <td>Requested Demo</td>
+                                <td class="warning">Pending</td>
+                                <td>Yesterday</td>
+                            </tr>
+                            <tr>
+                                <td>Sarah Ahmed</td>
+                                <td>Subscription Renewed</td>
+                                <td class="success">Completed</td>
+                                <td>2 Jul</td>
+                            </tr>
+                            <tr>
+                                <td>Shazil Khan</td>
+                                <td>Payment Failed</td>
+                                <td class="danger">Failed</td>
+                                <td>2 Jul</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="task-card">
+                    <div class="card-header">
+                        <h2>Upcoming Tasks</h2>
+                    </div>
+                    <ul>
+                        <li>📞 Client Meeting - 11:00 AM</li>
+                        <li>📈 Weekly Sales Review</li>
+                        <li>📧 Send Proposal to ABC Ltd.</li>
+                        <li>📝 Prepare Monthly Report</li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+</body>
+</html>
