@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Lead Intake Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page">
+
+        <form class="lead-form">
+
+            <h1 class="lead-form__title">Lead Management System</h1>
+
+            <p class="lead-form__subtitle">
+                Enter lead information below.
+            </p>
+
+            <!-- Personal Information -->
+
+            <fieldset class="lead-form__fieldset">
+
+                <legend class="lead-form__legend">Personal Information</legend>
+
+                <div class="lead-form__grid">
+
+                    <div class="lead-form__field-group">
+
+                        <label class="lead-form__label" for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            class="lead-form__control"
+                            id="name"
+                            type="text"
+                            placeholder="John Doe"
+                            required
+                            minlength="3"
+                            aria-required="true">
+
+                    </div>
+
+                    <div class="lead-form__field-group">
+
+                        <label class="lead-form__label" for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            class="lead-form__control"
+                            id="email"
+                            type="email"
+                            placeholder="john@email.com"
+                            required
+                            aria-required="true">
+
+                    </div>
+
+                    <div class="lead-form__field-group">
+
+                        <label class="lead-form__label" for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            class="lead-form__control"
+                            id="phone"
+                            type="tel"
+                            pattern="[0-9]{11}"
+                            placeholder="03123456789"
+                            required
+                            aria-describedby="phone-help">
+
+                        <small class="lead-form__hint" id="phone-help">
+                            Enter an 11-digit phone number.
+                        </small>
+
+                    </div>
+
+                    <div class="lead-form__field-group">
+
+                        <label class="lead-form__label" for="company">
+                            Company
+                        </label>
+
+                        <input
+                            class="lead-form__control"
+                            id="company"
+                            type="text"
+                            placeholder="ABC Solutions">
+
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+            <!-- Lead Details -->
+
+            <fieldset class="lead-form__fieldset">
+
+                <legend class="lead-form__legend">Lead Details</legend>
+
+                <div class="lead-form__grid">
+
+                    <div class="lead-form__field-group">
+
+                        <label class="lead-form__label" for="source">
+                            Lead Source
+                        </label>
+
+                        <select class="lead-form__control" id="source" required>
+
+                            <option value="">
+                                Select Source
+                            </option>
+
+                            <option>Facebook</option>
+                            <option>Instagram</option>
+                            <option>Website</option>
+                            <option>Referral</option>
+                            <option>LinkedIn</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="lead-form__field-group">
+
+                        <label class="lead-form__label" for="priority">
+                            Priority
+                        </label>
+
+                        <select class="lead-form__control" id="priority">
+
+                            <option>Low</option>
+                            <option>Medium</option>
+                            <option>High</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="lead-form__field-group">
+
+                        <label class="lead-form__label" for="budget">
+                            Estimated Budget
+                        </label>
+
+                        <input
+                            class="lead-form__control"
+                            id="budget"
+                            type="number"
+                            min="1000"
+                            max="1000000"
+                            placeholder="50000">
+
+                    </div>
+
+                    <div class="lead-form__field-group">
+
+                        <label class="lead-form__label" for="date">
+                            Expected Closing Date
+                        </label>
+
+                        <input
+                            class="lead-form__control"
+                            id="date"
+                            type="date">
+
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+            <!-- Preferences -->
+
+            <fieldset class="lead-form__fieldset">
+
+                <legend class="lead-form__legend">Preferred Contact</legend>
+
+                <div class="lead-form__choice-group">
+
+                    <label class="lead-form__choice">
+                        <input type="radio"
+                               name="contact"
+                               checked>
+
+                        Email
+                    </label>
+
+                    <label class="lead-form__choice">
+                        <input type="radio"
+                               name="contact">
+
+                        Phone
+                    </label>
+
+                    <label class="lead-form__choice">
+                        <input type="radio"
+                               name="contact">
+
+                        WhatsApp
+                    </label>
+
+                </div>
+
+            </fieldset>
+
+            <!-- Services -->
+
+            <fieldset class="lead-form__fieldset">
+
+                <legend class="lead-form__legend">Interested Services</legend>
+
+                <div class="lead-form__choice-group">
+
+                    <label class="lead-form__choice">
+                        <input type="checkbox">
+                        Website
+                    </label>
+
+                    <label class="lead-form__choice">
+                        <input type="checkbox">
+                        Mobile App
+                    </label>
+
+                    <label class="lead-form__choice">
+                        <input type="checkbox">
+                        UI/UX Design
+                    </label>
+
+                    <label class="lead-form__choice">
+                        <input type="checkbox">
+                        SEO
+                    </label>
+
+                </div>
+
+            </fieldset>
+
+            <!-- Notes -->
+
+            <div class="lead-form__field-group">
+
+                <label class="lead-form__label" for="notes">
+                    Additional Notes
+                </label>
+
+                <textarea
+                    class="lead-form__control lead-form__control--textarea"
+                    id="notes"
+                    rows="6"
+                    placeholder="Write additional information..."></textarea>
+
+            </div>
+
+            <button class="lead-form__button" type="submit">
+                Submit Lead
+            </button>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>
