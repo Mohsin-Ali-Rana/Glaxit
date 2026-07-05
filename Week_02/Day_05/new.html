@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SalesFlow CRM Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="dashboard">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <div class="logo">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h2>SalesFlow</h2>
+                </div>
+
+                <button class="close-menu" aria-label="Close menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <nav>
+                <ul>
+                    <li class="active">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Dashboard</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-users"></i>
+                        <span>Customers</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-user-plus"></i>
+                        <span>Leads</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Orders</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-chart-column"></i>
+                        <span>Analytics</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-file-lines"></i>
+                        <span>Reports</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>Calendar</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Logout</span>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div class="left-header">
+
+                <button class="menu-btn">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+                <h2>Dashboard</h2>
+
+            </div>
+
+            <div class="search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input type="text" placeholder="Search customers, reports...">
+
+            </div>
+
+            <div class="header-right">
+
+                <div class="icon">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span>3</span>
+
+                </div>
+
+                <div class="icon">
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <span>5</span>
+
+                </div>
+
+                <div class="profile">
+
+                    <img src="mine.jpeg" alt="Profile Picture">
+
+                    <div>
+
+                        <h4>Mohsin Ali</h4>
+
+                        <p>CRM Manager</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="hero">
+
+            <h1 id="greeting"></h1>
+
+            <p>Welcome back! Here's your latest business overview.</p>
+
+        </section>
+
+        <section class="stats">
+
+
+            <div class="card revenue">
+
+                <div class="card-top">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                    </div>
+
+                    <span class="trend up">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        12.4%
+                    </span>
+                </div>
+
+                <h2>$148,500</h2>
+
+                <p>Total Revenue</p>
+
+            </div>
+
+            <div class="card customers">
+
+                <div class="card-top">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <span class="trend up">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        8.2%
+                    </span>
+                </div>
+
+                <h2>3,281</h2>
+
+                <p>Total Customers</p>
+
+            </div>
+
+            <div class="card orders">
+
+                <div class="card-top">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+
+                    <span class="trend down">
+                        <i class="fa-solid fa-arrow-trend-down"></i>
+                        3.1%
+                    </span>
+                </div>
+
+                <h2>812</h2>
+
+                <p>Orders</p>
+
+            </div>
+
+            <div class="card conversion">
+
+                <div class="card-top">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <span class="trend up">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        4.6%
+                    </span>
+                </div>
+
+                <h2>92%</h2>
+
+                <p>Conversion Rate</p>
+
+            </div>
+
+        </section>
+
+        <section class="content">
+
+            <div class="left-content">
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <h3>Revenue Analytics</h3>
+
+                        <a href="#">View Report</a>
+
+                    </div>
+
+                    <div class="chart">
+
+                        <div class="bar" style="height:60%"></div>
+
+                        <div class="bar" style="height:75%"></div>
+
+                        <div class="bar" style="height:45%"></div>
+
+                        <div class="bar" style="height:90%"></div>
+
+                        <div class="bar" style="height:65%"></div>
+
+                        <div class="bar" style="height:100%"></div>
+
+                        <div class="bar" style="height:82%"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <h3>Recent Activity</h3>
+
+                        <a href="#">View All</a>
+
+                    </div>
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Customer</th>
+
+                                <th>Activity</th>
+
+                                <th>Status</th>
+
+                                <th>Date</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>Rayyan Ahmer</td>
+
+                                <td>Purchased CRM Pro</td>
+
+                                <td><span class="badge success">Completed</span></td>
+
+                                <td>Today</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Shazil Ahmad</td>
+
+                                <td>Requested Demo</td>
+
+                                <td><span class="badge warning">Pending</span></td>
+
+                                <td>Yesterday</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Sarah Ahmed</td>
+
+                                <td>Subscription Renewed</td>
+
+                                <td><span class="badge success">Completed</span></td>
+
+                                <td>2 Jul</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Hamza Tariq</td>
+
+                                <td>Payment Failed</td>
+
+                                <td><span class="badge danger">Failed</span></td>
+
+                                <td>2 Jul</td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="right-content">
+                <div class="panel">
+
+                    <div class="panel-header">
+                        <h3>Upcoming Tasks</h3>
+                    </div>
+
+                    <div class="task">
+
+                        <h4>Client Meeting</h4>
+
+                        <p>Today • 11:00 AM</p>
+
+                    </div>
+
+                    <div class="task">
+
+                        <h4>Sales Report Submission</h4>
+
+                        <p>Today • 3:00 PM</p>
+
+                    </div>
+
+                    <div class="task">
+
+                        <h4>Marketing Review</h4>
+
+                        <p>Tomorrow • 10:30 AM</p>
+
+                    </div>
+
+                    <div class="task">
+
+                        <h4>Team Stand-up</h4>
+
+                        <p>Tomorrow • 9:00 AM</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <h3>Team Members</h3>
+
+                    </div>
+
+                    <div class="member">
+
+                        <img src="Rayyan.jpeg" alt="Rayyan Ahmer">
+
+                        <div>
+
+                            <h4>Rayyan Ahmer</h4>
+
+                            <small>Sales Executive</small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="member">
+
+                        <img src="Shazil.jpeg" alt="Shazil Ahmad">
+
+                        <div>
+
+                            <h4>Shazil Ahmad</h4>
+
+                            <small>Marketing Lead</small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="member">
+
+                        <img src="Hamza.jpeg" alt="Hamza Tariq">
+
+                        <div>
+
+                            <h4>Hamza Tariq</h4>
+
+                            <small>CRM Specialist</small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="panel">
+
+                    <div class="panel-header">
+
+                        <h3>Quick Actions</h3>
+
+                    </div>
+
+                    <button class="action-btn">
+
+                        <i class="fa-solid fa-user-plus"></i>
+
+                        Add Customer
+
+                    </button>
+
+                    <button class="action-btn">
+
+                        <i class="fa-solid fa-file-circle-plus"></i>
+
+                        Create Report
+
+                    </button>
+
+                    <button class="action-btn">
+
+                        <i class="fa-solid fa-chart-line"></i>
+
+                        View Analytics
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+
+            <p>
+
+                © 2026 SalesFlow CRM Dashboard | Designed by Mohsin Ali
+
+            </p>
+
+        </footer>
+
+    </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
