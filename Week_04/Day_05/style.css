@@ -1,0 +1,248 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* ===========================
+   MAIN CONTAINER
+=========================== */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    gap: 25px;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
+}
+
+header h1 {
+    font-size: 2.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #666;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.weather-card,
+.quote-card,
+.favorites-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+}
+
+/* ===========================
+   SECTION HEADINGS
+=========================== */
+
+section h2 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* ===========================
+   SEARCH BAR
+=========================== */
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 14px 22px;
+    border: none;
+    border-radius: 10px;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.search-box button:hover {
+    background: #217dbb;
+}
+
+/* ===========================
+   WEATHER INFO
+=========================== */
+
+.weather-info {
+    text-align: center;
+}
+
+.weather-info img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.weather-info h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.weather-info h1 {
+    font-size: 60px;
+    color: #3498db;
+}
+
+.weather-info p {
+    color: #666;
+    margin-top: 10px;
+}
+
+/* ===========================
+   WEATHER DETAILS
+=========================== */
+
+.weather-details {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+/* ===========================
+   QUOTE
+=========================== */
+
+blockquote {
+    font-size: 22px;
+    font-style: italic;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#quoteAuthor {
+    text-align: right;
+    font-weight: 600;
+    color: #666;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.quote-buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.quote-buttons button {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 16px;
+}
+
+#newQuoteBtn {
+    background: #3498db;
+    color: white;
+}
+
+#newQuoteBtn:hover {
+    background: #217dbb;
+}
+
+#saveQuoteBtn {
+    background: #27ae60;
+    color: white;
+}
+
+#saveQuoteBtn:hover {
+    background: #1e8449;
+}
+
+/* ===========================
+   FAVORITES
+=========================== */
+
+#favoritesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Placeholder */
+
+.empty {
+    text-align: center;
+    color: #777;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .weather-details {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .quote-buttons {
+        flex-direction: column;
+    }
+}

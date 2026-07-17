@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & Quote Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- ================= HEADER ================= -->
+        <header>
+            <h1>🌤 Weather & Quote Dashboard</h1>
+            <p>Check today's weather and stay inspired.</p>
+        </header>
+
+        <!-- ================= WEATHER SECTION ================= -->
+        <section class="weather-card">
+            <h2>Current Weather</h2>
+
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Enter city name">
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <div class="weather-info">
+                <img id="weatherIcon" src="" alt="Weather Icon">
+                <h3 id="cityName">City Name</h3>
+                <h1 id="temperature">--°C</h1>
+                <p id="description">Weather Description</p>
+
+                <div class="weather-details">
+                    <p>💧 Humidity: <span id="humidity">--%</span></p>
+                    <p>🌬 Wind: <span id="wind">-- km/h</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= QUOTE SECTION ================= -->
+        <section class="quote-card">
+            <h2>Quote of the Day</h2>
+            <blockquote id="quoteText">Loading quote...</blockquote>
+            <p id="quoteAuthor">Author</p>
+
+            <div class="quote-buttons">
+                <button id="newQuoteBtn">New Quote</button>
+                <button id="saveQuoteBtn">❤️ Save Quote</button>
+            </div>
+        </section>
+
+        <!-- ================= FAVORITES ================= -->
+        <section class="favorites-card">
+            <h2>Favorite Quotes</h2>
+            <div id="favoritesContainer">
+                <!-- Quotes will appear here -->
+            </div>
+        </section>
+
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
