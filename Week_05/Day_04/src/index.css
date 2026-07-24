@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+    background:#ffffff;
+    color:#1f2937;
+}
+
+button{
+    transition:.3s;
+}
+
+button:hover{
+    opacity:.9;
+}
+
+a{
+    transition:.3s;
+}
