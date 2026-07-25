@@ -1,0 +1,28 @@
+import { NavLink } from "react-router-dom";
+import "./Navbar.css";
+
+function Navbar() {
+  return (
+    <nav className="navbar">
+      <div className="logo">
+        DevPortfolio
+      </div>
+
+      <div className="nav-links">
+        <NavLink to="/">
+          Home
+        </NavLink>
+
+        <NavLink to="/products">
+          Products
+        </NavLink>
+
+        <NavLink to="/about">
+          About
+        </NavLink>
+      </div>
+    </nav>
+  );
+}
+
+export default Navbar;
