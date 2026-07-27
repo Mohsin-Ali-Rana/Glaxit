@@ -1,0 +1,140 @@
+.contact-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card {
+    width: 1100px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .08);
+}
+
+.left {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.left p {
+    line-height: 1.8;
+    margin-bottom: 30px;
+    opacity: .95;
+}
+
+.left ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 17px;
+}
+
+.right {
+    padding: 45px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input,
+textarea {
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 16px;
+    transition: .3s;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, .15);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.counter {
+    text-align: right;
+    font-size: 13px;
+    color: #666;
+}
+
+small {
+    color: #dc2626;
+    font-size: 13px;
+}
+
+button {
+    border: none;
+    padding: 15px;
+    background: #2563eb;
+    color: white;
+    font-size: 17px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover:not(:disabled) {
+    background: #1d4ed8;
+}
+
+button:disabled {
+    background: #bfc7d8;
+    cursor: not-allowed;
+}
+
+.success {
+    color: #16a34a;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+    .contact-card {
+        grid-template-columns: 1fr;
+    }
+
+    .left {
+        padding: 35px;
+    }
+
+    .right {
+        padding: 35px;
+    }
+
+    .left h1 {
+        font-size: 34px;
+    }
+}
